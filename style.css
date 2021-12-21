@@ -6,22 +6,7 @@ html, body {
     background-color: #000;
 }
 
-.hero-wrapper {
-    padding: 3rem;
-}
-
-.hero-title {
-    font-size: 7vw;
-    text-align: justify;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    color: grey;
-    line-height: 1;
-}
-
-.hero-title > span {
-    color: white!important;
-}
+/* navigation */
 
 header nav {
     background-color: rgba(0, 0, 0, 1);
@@ -120,3 +105,30 @@ header nav ul li a:hover {
 	transform: translateY(-8px) rotate(-45deg);
 }
  
+/* navigation end */
+
+/* hero section */
+
+.hero-wrapper {
+    padding: 3rem;
+}
+
+.hero-title {
+    font-size: 7vw;
+    text-align: justify;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: grey;
+    line-height: 1;
+}
+
+.hero-title > span {
+    color: white!important;
+}
+
+.hero-wrapper > .row > a {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #fff;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
