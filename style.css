@@ -4,6 +4,13 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #000;
+    color: #fff;
+    font-family: 'helvetica neue', sans-serif;
+    overflow-x: hidden;
+}
+
+p {
+    font-weight: lighter;
 }
 
 /* navigation */
@@ -28,16 +35,19 @@ header nav ul li {
     width: 100%;
     border-bottom: solid 2px #fff;
 }
+
+header nav ul li:nth-child(1) {
+    border-top: solid 2px #fff;
+}
+
 header nav ul li a {
-    font-size: 2em;
+    font-size: 5vw;
     text-decoration: none;
     color: #fff;
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
-    font-size: 6rem;
-    padding-bottom: 20px;
     width: 100%;
 }
 
@@ -62,9 +72,7 @@ header nav ul li a:hover {
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, .3);
 }
-.toggle-btn .bar:nth-child(2) {
-	width: 20px;
-}
+
 #toggle:checked ~ nav {
     opacity: 1;
     visibility: visible;
@@ -132,3 +140,51 @@ header nav ul li a:hover {
     text-decoration: underline;
     text-transform: uppercase;
 }
+
+.banner {
+    background-color: #ffff05;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 6vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    transform: rotate(2deg);
+}
+
+.banner-text {
+    /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 10s linear infinite;
+  -webkit-animation: my-animation 10s linear infinite;
+  animation: my-animation 10s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
