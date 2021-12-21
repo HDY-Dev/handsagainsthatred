@@ -1,0 +1,122 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.hero-wrapper {
+    padding: 3rem;
+}
+
+.hero-title {
+    font-size: 7vw;
+    text-align: justify;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: grey;
+    line-height: 1;
+}
+
+.hero-title > span {
+    color: white!important;
+}
+
+header nav {
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+header nav ul {
+	list-style-type: none;
+    width: 100%;
+    padding: 5rem;
+}
+header nav ul li {
+    width: 100%;
+    border-bottom: solid 2px #fff;
+}
+header nav ul li a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    font-size: 6rem;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+
+header nav ul li a:hover {
+	background-color: #ffff05;
+    color: #000;
+}
+.toggle-btn {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.toggle-btn .bar {
+    width: 30px;
+    height: 2px;
+    margin: 7px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .3);
+}
+.toggle-btn .bar:nth-child(2) {
+	width: 20px;
+}
+#toggle:checked ~ nav {
+    opacity: 1;
+    visibility: visible;
+}
+#toggle:checked ~ nav ul {
+	top: 70px;
+}
+#toggle:checked ~ nav ul li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+#toggle:checked ~ nav ul li:nth-child(1) {
+	transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.1s;
+}
+#toggle:checked ~ nav ul li:nth-child(2) {
+	transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.2s;
+}
+#toggle:checked ~ nav ul li:nth-child(3) {
+	transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.3s;
+}
+#toggle:checked ~ nav ul li:nth-child(4) {
+	transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.4s;
+}   
+#toggle:checked ~ nav ul li:nth-child(5) {
+    transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.5s;
+}
+#toggle:checked + label.toggle-btn .bar {
+	background-color: white;
+}
+#toggle:checked + label.toggle-btn .bar:nth-child(2) {
+	transform: translateX(50px);
+	opacity: 0;
+}
+#toggle:checked + label.toggle-btn .bar:nth-child(1) {
+	transform: translateY(10px) rotate(45deg);
+}
+#toggle:checked + label.toggle-btn .bar:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+}
+ 
