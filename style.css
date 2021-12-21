@@ -25,15 +25,18 @@ header nav {
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease-in-out;
+    z-index: 98;
 }
 header nav ul {
 	list-style-type: none;
     width: 100%;
     padding: 5rem;
+    z-index: 98;
 }
 header nav ul li {
     width: 100%;
     border-bottom: solid 2px #fff;
+    z-index: 98;
 }
 
 header nav ul li:nth-child(1) {
@@ -49,6 +52,7 @@ header nav ul li a {
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
     width: 100%;
+    z-index: 98;
 }
 
 
@@ -59,10 +63,10 @@ header nav ul li a:hover {
 .toggle-btn {
     display: block;
     position: fixed;
-    z-index: 10;
     right: 10px;
     top: 10px;
     cursor: pointer;
+    z-index: 100;
 }
 .toggle-btn .bar {
     width: 30px;
@@ -71,18 +75,22 @@ header nav ul li a:hover {
     background-color: #fff;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, .3);
+    z-index: 99;
 }
 
 #toggle:checked ~ nav {
     opacity: 1;
     visibility: visible;
+    z-index: 99;
 }
 #toggle:checked ~ nav ul {
 	top: 70px;
+    z-index: 99;
 }
 #toggle:checked ~ nav ul li {
 	transform: translateY(0px);
 	opacity: 1;
+    z-index: 99;
 }
 #toggle:checked ~ nav ul li:nth-child(1) {
 	transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.1s;
@@ -188,3 +196,75 @@ header nav ul li a:hover {
   }
 }
 
+/* test */
+
+.tickerwrapper {
+  /* the outer div */
+  
+    position: relative;
+    top: 0;
+    left:0%;
+    border: solid 2px #fff;
+    background: #ffff05;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.tickerwrapper-2 {
+    position: relative;
+    bottom: 0;
+    left:0%;
+    border: solid 2px #fff;
+    background: #ffff05;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+ul.list {
+    display: inline-block;
+    list-style: none;
+    padding:0;
+    margin:0;
+    color: #000;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+ul.list-2 {
+    display: inline-block;
+    list-style: none;
+    padding:0;
+    margin:0;
+    color: #000;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+
+ul.list.cloned {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+ul.list-2.cloned {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+ul.list li {
+    float: left;
+    padding-left: 10px;
+}
+
+ul.list-2 li {
+    float: left;
+    padding-left: 10px;
+}
+
+.carousel-control-prev {
+
+}
