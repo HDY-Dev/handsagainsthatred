@@ -275,7 +275,7 @@ ul.list-2 li {
     opacity: 1;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev {
     border-right: solid 2px #fff;
     text-transform: uppercase;
     font-size: 1.8vw;
@@ -283,6 +283,8 @@ ul.list-2 li {
 
 .carousel-control-next {
     border-left: solid 2px #fff;
+    text-transform: uppercase;
+    font-size: 1.8vw;
 }
 
 .carousel-control-prev:hover, 
