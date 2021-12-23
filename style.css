@@ -14,7 +14,7 @@ p {
 }
 
 .hah-yellow {
-    color: #ffff05;
+    color: #ffff05!important;
 }
 
 .hah-black {
@@ -302,6 +302,7 @@ ul.list-2 li {
     border-right: solid 2px #fff;
     text-transform: uppercase;
     font-size: 1.8vw;
+    color: #fff!important;
 }
 
 .carousel-control-next {
@@ -318,8 +319,7 @@ ul.list-2 li {
     opacity: 1!important;
 }
 
-.outcome-img {
-}
+
 
 
 .yellow-star {
@@ -336,13 +336,18 @@ ul.list-2 li {
     text-decoration: underline;
     color: #fff;
     transition: all .2s ease-in-out;
-    width: 25%;
+    width: 35%;
+}
+
+.contact-link {
+    font-size: 4vw;
+    line-height: 4vw;
 }
 
 .visit-us-link:hover {
     background-color: #ffff05;
     color: #000;
-    width: 25%;
+    width: 35%;
 }
 
 .fill-hover {
