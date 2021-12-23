@@ -13,6 +13,28 @@ p {
     font-weight: lighter;
 }
 
+.hah-yellow {
+    color: #ffff05;
+}
+
+.hah-black {
+    color: #000;
+}
+
+.hah-black-hollow {
+    color: #ffff05;
+    -webkit-text-stroke: 2px #000;
+    -moz-text-stroke: 2px #000;
+}
+
+.bg-yellow {
+    background-color: #ffff05;
+}
+
+.b-and-l {
+    filter: grayscale(100%);
+}
+
 /* navigation */
 
 header nav {
@@ -294,4 +316,73 @@ ul.list-2 li {
 .carousel-control-next:active
 {
     opacity: 1!important;
+}
+
+.outcome-img {
+}
+
+
+.yellow-star {
+    position: relative;
+    max-width: 400px;
+    max-height: 100%;
+    z-index: 90;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 24%;
+}
+
+.visit-us-link {
+    text-decoration: underline;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    width: 25%;
+}
+
+.visit-us-link:hover {
+    background-color: #ffff05;
+    color: #000;
+    width: 25%;
+}
+
+.fill-hover {
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+
+.fill-hover:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.resource-list {
+    padding: 3rem;
+    list-style: none;
+    width: 100%;
+}
+
+
+.resource-link {
+    text-transform: uppercase;
+    font-size: 6vw;
+    border-bottom: solid 2px #fff;
+    width: 100%;
+    line-height: 6vw;
+    padding: 2rem;
+}
+
+.resource-link a {
+    color: #ffff05;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+
+.resource-link a:hover {
+    background-color: #ffff05;
+    color: #000;
+}
+
+.resource-link span {
+    font-size: 24px;
 }
