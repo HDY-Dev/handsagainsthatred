@@ -10,7 +10,7 @@ html, body {
 }
 
 p {
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 .hah-yellow {
@@ -160,9 +160,6 @@ header nav ul li a:hover {
     line-height: 1;
 }
 
-.hero-title > span {
-    color: white!important;
-}
 
 .hero-wrapper > .row > a {
     font-family: 'Helvetica Neue', sans-serif;
