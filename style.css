@@ -6,7 +6,7 @@ html, body {
     background-color: #000;
     color: #fff;
     font-family: 'helvetica neue', sans-serif;
-    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 p {
@@ -168,54 +168,63 @@ header nav ul li a:hover {
     text-transform: uppercase;
 }
 
-.banner {
-    background-color: #ffff05;
-    border: solid 2px #fff;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 6vw;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #000;
-    text-align: center;
-    transform: rotate(2deg);
-}
+.wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    transform: rotate(6deg);
+    position: absolute;
+  }
 
-.banner-text {
-    /* animation properties */
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+  .wrapper-2 {
+    max-width: 100%;
+    overflow: hidden;
+    transform: rotate(-6deg);
+    position: absolute;
+  }
   
-  -moz-animation: my-animation 10s linear infinite;
-  -webkit-animation: my-animation 10s linear infinite;
-  animation: my-animation 10s linear infinite;
-}
-
-/* for Firefox */
-@-moz-keyframes my-animation {
-  from { -moz-transform: translateX(100%); }
-  to { -moz-transform: translateX(-100%); }
-}
-
-/* for Chrome */
-@-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(100%); }
-  to { -webkit-transform: translateX(-100%); }
-}
-
-@keyframes my-animation {
-  from {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+  .marquee-1 {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee-1 50s linear infinite;
+    font-size: 6vw;
+    background-color: #ffff05;
+    color: #000;
   }
-  to {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
 
+  .marquee-2 {
+    
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee-2 50s linear infinite;
+    font-size: 6vw;
+    background-color: #ffff05;
+    color: #000;
+  }
+  
+  .marquee-1 p,
+  .marquee-2 p {
+    display: inline-block;
+  }
+  
+  @keyframes marquee-1 {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  @keyframes marquee-2 {
+    0% {
+      transform: translate3d(-50%, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
 /* test */
 
 .tickerwrapper {
@@ -318,6 +327,10 @@ ul.list-2 li {
 
 /* Our Aim */
 
+#our-aim {
+    height: 100%;
+}
+
 .nav-pills > .nav-link {
     background-color: transparent!important;
     font-size: 4vw;
@@ -349,6 +362,57 @@ ul.list-2 li {
 }
 
 
+#our-outcome {
+    background-color: #ffff05;
+}
+
+  .scroll-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffff05;
+  }
+  
+  .space-holder {
+    position: relative;
+    width: 100%;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .horizontal {
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+  }
+  
+  .cards {
+    position: relative;
+    height: 100%;
+    padding: 0 0 0 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .sample-card {
+    position: relative;
+    height: 700px;
+    width: 900px;
+    margin-right: 75px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+
 .yellow-star {
     position: relative;
     max-width: 400px;
@@ -363,7 +427,6 @@ ul.list-2 li {
     text-decoration: underline;
     color: #fff;
     transition: all .2s ease-in-out;
-    width: 35%;
 }
 
 .contact-title {
@@ -379,7 +442,6 @@ ul.list-2 li {
 .visit-us-link:hover {
     background-color: #ffff05;
     color: #000;
-    width: 35%;
 }
 
 .fill-hover {
@@ -401,10 +463,10 @@ ul.list-2 li {
 
 .resource-link {
     text-transform: uppercase;
-    font-size: 6vw;
+    font-size: 5vw;
     border-bottom: solid 2px #fff;
     width: 100%;
-    line-height: 6vw;
+    line-height: 5vw;
     padding: 2rem;
 }
 
@@ -430,11 +492,57 @@ ul.list-2 li {
         font-size: 10vw;
     }
 
+    #our-aim {
+        height: auto;
+    }
+
+    .nav-link {
+        /* height: auto; */
+        -webkit-text-stroke: 1px #fff!important;
+        -moz-text-stroke: 1px #fff!important;
+
+    }
+
+    .tab-pane {
+        font-size: 16px;
+    }
 
     
 }
 
 @media (max-width: 767.98px) {
+
+    .sample-card {
+        height: 500px;
+        width: 700px;
+    }
+
+    .contact-title {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+
+
+    .contact-heading, .contact-link {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        word-wrap: break-word;
+    }
+
+    .resource-list {
+        padding: 0;
+    }
+
+    .resource-link {
+        font-size: 24px;
+        line-height: 24px;
+        padding: 1rem;
+    }
+
+    .resource-link > span:last-child {
+        display: none;
+    }
 
 }
 
@@ -443,6 +551,10 @@ ul.list-2 li {
 }
 
 @media (max-width: 1199.98px) {
+
+    /* .nav-link {
+        height: 33.33%!important;
+    } */
     .hero-wrapper {
         padding: 1rem;
         
@@ -456,7 +568,7 @@ ul.list-2 li {
     }
 
     .display-2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
 }

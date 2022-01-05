@@ -1,7 +1,7 @@
 var $tickerWrapper = $(".tickerwrapper");
 var $list = $tickerWrapper.find("ul.list");
 var $clonedList = $list.clone();
-var listWidth = 110;
+var listWidth = 100;
 
 $list.find("li").each(function (i) {
            listWidth += $(this, i).outerWidth(true);
