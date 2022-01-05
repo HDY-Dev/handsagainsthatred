@@ -331,6 +331,7 @@ ul.list-2 li {
 .carousel-control-prev, .carousel-control-next {
     background: rgba(0, 0, 0, 1);
     opacity: 1;
+    z-index: 999;
 }
 
 .carousel-control-prev {
@@ -411,7 +412,7 @@ ul.list-2 li {
     position: sticky;
     top: 0;
     height: 100vh;
-    width: 100%;
+    /* width: 100%; */
     overflow-x: hidden;
   }
   
@@ -435,6 +436,7 @@ ul.list-2 li {
     position: relative;
     height: 700px;
     width: 900px;
+    padding-left: 50px;
     margin-right: 75px;
     flex-shrink: 0;
     display: flex;
@@ -442,7 +444,7 @@ ul.list-2 li {
   }
 
   .outcome-desc {
-      font-size: 1.3rem;
+      font-size: 1.25rem;
   }
 
 .visit-us-link {
@@ -521,9 +523,7 @@ ul.list-2 li {
         font-size: 10vw;
     }
 
-    #our-aim {
-        height: auto;
-    }
+    
 
     .nav-link {
         /* height: auto; */
@@ -553,6 +553,10 @@ ul.list-2 li {
         text-align: left;
     }
 
+    .tab-pane {
+        font-size: 2.2vw;
+    }
+
     .nav-pills > .nav-link {
         font-size: 8vw;
     }
@@ -565,6 +569,33 @@ ul.list-2 li {
     .outcome-desc {
         font-size: 14px;
         padding-right: 0;
+    }
+
+    
+
+    .resource-link > span:last-child {
+        display: none;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+
+    .nav-link {
+        font-size: 8vw!important;
+    }
+
+    .tab-pane {
+        font-size: 1.25rem;
+    }
+
+    #our-aim {
+        height: auto;
+    }
+
+    .sample-card {
+        height: 100px;
+        width: 600px;
     }
 
     .contact-title {
@@ -587,14 +618,6 @@ ul.list-2 li {
         line-height: 24px;
         padding: 1rem;
     }
-
-    .resource-link > span:last-child {
-        display: none;
-    }
-
-}
-
-@media (max-width: 991.98px) {
 
 }
 
