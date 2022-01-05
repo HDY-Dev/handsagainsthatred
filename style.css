@@ -1,8 +1,8 @@
 html, body {
     height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0!important;
+    padding: 0!important;
     background-color: #000;
     color: #fff;
     font-family: 'helvetica neue', sans-serif;
@@ -33,6 +33,9 @@ p {
 
 .b-and-l {
     filter: grayscale(100%);
+}
+
+.hdy-logo {
 }
 
 /* navigation */
@@ -149,6 +152,7 @@ header nav ul li a:hover {
 
 .hero-wrapper {
     padding: 3rem;
+    height: 100%;
 }
 
 .hero-title {
@@ -170,16 +174,24 @@ header nav ul li a:hover {
 
 .wrapper {
     max-width: 100%;
-    overflow: hidden;
-    transform: rotate(6deg);
+    overflow-x: hidden;
+    transform: rotate(6deg) scaleX(100%);
     position: absolute;
   }
 
   .wrapper-2 {
     max-width: 100%;
-    overflow: hidden;
-    transform: rotate(-6deg);
+    overflow-x: hidden;
+    transform: rotate(-6deg) scaleX(100%);
     position: absolute;
+  }
+
+  .wrapper-3 {
+    max-width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    background-color: #ffff05;
+    border: solid 2px #fff;
   }
   
   .marquee-1 {
@@ -202,6 +214,17 @@ header nav ul li a:hover {
     background-color: #ffff05;
     color: #000;
   }
+
+  .marquee-3 {
+    
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee-1 50s linear infinite;
+    font-size: 6vw;
+    color: #000;
+  }
+  
   
   .marquee-1 p,
   .marquee-2 p {
@@ -225,7 +248,13 @@ header nav ul li a:hover {
       transform: translate3d(0, 0, 0);
     }
   }
-/* test */
+
+
+#intro-section {
+    margin-top: 20vw;
+    margin-bottom: 20vw;
+    padding-top: 10vw;
+}
 
 .tickerwrapper {
   /* the outer div */
@@ -363,7 +392,7 @@ ul.list-2 li {
 
 
 #our-outcome {
-    background-color: #ffff05;
+    /* height: 100vh; */
 }
 
   .scroll-container {
@@ -395,7 +424,7 @@ ul.list-2 li {
   .cards {
     position: relative;
     height: 100%;
-    padding: 0 0 0 150px;
+    /* padding: 0 0 0 150px; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -411,17 +440,10 @@ ul.list-2 li {
     display: flex;
     align-items: center;
   }
-  
 
-.yellow-star {
-    position: relative;
-    max-width: 400px;
-    max-height: 100%;
-    z-index: 90;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 24%;
-}
+  .outcome-desc {
+      font-size: 1.3rem;
+  }
 
 .visit-us-link {
     text-decoration: underline;
@@ -488,6 +510,13 @@ ul.list-2 li {
 
 
 @media (max-width: 575.98px) {
+
+    .hero-wrapper {
+        margin-top: 4.5rem;
+        height: auto;
+    }
+
+
     .hero-title {
         font-size: 10vw;
     }
@@ -512,17 +541,36 @@ ul.list-2 li {
 
 @media (max-width: 767.98px) {
 
+    header nav ul {
+        padding: 2rem;
+    }
+
+    header nav ul li a {
+        font-size: 11vw;
+    }
+
+    .hero-title {
+        text-align: left;
+    }
+
+    .nav-pills > .nav-link {
+        font-size: 8vw;
+    }
+
     .sample-card {
-        height: 500px;
-        width: 700px;
+        height: 100px;
+        width: 300px;
+    }
+
+    .outcome-desc {
+        font-size: 14px;
+        padding-right: 0;
     }
 
     .contact-title {
         font-size: 3rem;
         line-height: 3rem;
     }
-
-
 
     .contact-heading, .contact-link {
         font-size: 2.5rem;
