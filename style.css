@@ -6,7 +6,6 @@ html, body {
     background-color: #000;
     color: #fff;
     font-family: 'helvetica neue', sans-serif;
-    scroll-behavior: smooth;
 }
 
 p {
@@ -33,9 +32,6 @@ p {
 
 .b-and-l {
     filter: grayscale(100%);
-}
-
-.hdy-logo {
 }
 
 /* navigation */
@@ -92,6 +88,7 @@ header nav ul li a:hover {
     top: 10px;
     cursor: pointer;
     z-index: 100;
+    margin-right: 50px;
 }
 .toggle-btn .bar {
     width: 30px;
@@ -108,6 +105,7 @@ header nav ul li a:hover {
     visibility: visible;
     z-index: 99;
 }
+
 #toggle:checked ~ nav ul {
 	top: 70px;
     z-index: 99;
@@ -260,73 +258,6 @@ header nav ul li a:hover {
     padding-top: 10vw;
 }
 
-.tickerwrapper {
-  /* the outer div */
-  
-    position: relative;
-    top: 0;
-    left:0%;
-    border: solid 2px #fff;
-    background: #ffff05;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-
-.tickerwrapper-2 {
-    position: relative;
-    bottom: 0;
-    left:0%;
-    border: solid 2px #fff;
-    background: #ffff05;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-
-ul.list {
-    display: inline-block;
-    list-style: none;
-    padding:0;
-    margin:0;
-    color: #000;
-    font-size: 5vw;
-    font-weight: bold;
-}
-
-ul.list-2 {
-    display: inline-block;
-    list-style: none;
-    padding:0;
-    margin:0;
-    color: #000;
-    font-size: 5vw;
-    font-weight: bold;
-}
-
-
-ul.list.cloned {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-
-ul.list-2.cloned {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-}
-
-ul.list li {
-    float: left;
-    padding-left: 10px;
-}
-
-ul.list-2 li {
-    float: left;
-    padding-left: 10px;
-}
-
 .carousel-item img {
     max-height: 900px;
     object-fit: cover;
@@ -394,10 +325,6 @@ ul.list-2 li {
     object-fit: cover;
 }
 
-
-#our-outcome {
-    /* height: 100vh; */
-}
 
   .scroll-container {
     position: relative;
@@ -544,6 +471,10 @@ ul.list-2 li {
 
 @media (max-width: 767.98px) {
 
+    .toggle-btn {
+        margin-right: 35px;
+    }
+
     header nav ul {
         padding: 2rem;
     }
@@ -554,6 +485,10 @@ ul.list-2 li {
 
     .hero-title {
         text-align: left;
+    }
+
+    .marquee-1, .marquee-2 {
+        font-size: 10vw;
     }
 
     .tab-pane {

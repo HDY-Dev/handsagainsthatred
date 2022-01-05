@@ -24,7 +24,7 @@
     <!-- Navigation Start -->
     <header>
         <input type='checkbox' id='toggle' style='display:none;'/>
-        <label class='toggle-btn toggle-btn__cross me-4 mt-4' for='toggle'>
+        <label class='toggle-btn toggle-btn__cross mt-4' for='toggle'>
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
@@ -32,10 +32,10 @@
         <nav>
           <ul class="h-100 d-flex flex-column justify-content-center align-items-start">
             <li><a href="#intro-section">About</a></li>
-            <li><a href="#our-campaign">Our Aim</a></li>
-            <li><a href="#">Our Outcome</a></li>
-            <li><a href="#">Award</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#our-aim">Our Aim</a></li>
+            <li><a href="#our-outcome">Our Outcome</a></li>
+            <li><a href="#hdy-section">Award</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -89,7 +89,7 @@
                 <p class="pe-0 pe-xl-5 fs-5 lh-lg mt-5">Starting as a reaction piece fuelled by the hurt of many, Hands Against Hatred followed news of an unjust attack that occured in Birmingham’s gay district in October 2021.  A young man obtained horrific head injuries after the brutal attack. The motive? He was holding hands with his partner.                </p>
                 <img class="img-fluid mt-5 d-none d-xl-block" src="assets/intro-supporting-text-image-first.png">
             </div>
-            <div class="col-lg-6 d-none d-md-block p-sm-5">
+            <div class="col-lg-6 d-sm-block p-sm-5">
                 <img class="img-fluid" src="assets/intro-image-first.png">
             </div>
         </div>
@@ -110,7 +110,7 @@
 
     <!--Carousel Start -->
 
-    <div id="banner-second" class="mt-5 pt-5">
+    <div id="banner-second" class="mt-md-5 pt-md-5">
       <div class="wrapper-3">
         <div class="marquee-3">
           <p class="fw-bold m-0">
@@ -137,13 +137,13 @@
             <img class="d-block w-100" src="assets/carousel-img-3.jpg" alt="Third slide">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev d-none d-sm-flex" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
           <!-- <span class="carousel-control-prev-icon"></span> -->
-          <span class="sr-only">Prev</span>
+          Prev
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <a class="carousel-control-next d-none d-sm-flex" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
           <!-- <span class="carousel-control-next-icon"></span> -->
-          <span class="sr-only">Next</span>
+          Next
         </a>
       </div>
 
@@ -224,7 +224,7 @@
 
     <!-- Our Outcome Start -->
 
-    <div class="row">
+    <div id="our-outcome" class="row">
       <div class="col-lg-6 g-0 border border-white p-5">
         <h1 class="text-uppercase display-2 fw-bold">Our Outcome</h1>
         <p class="lh-lg mt-4 outcome-desc">The spark that provoked a social phenomenon. Hands Against Hatred commanded attention from millions of social media scrollers and high street bypassers all through a strong visual that was centred around one simple act. Holding hands. The photo circulated the net and #HandsAgainstHatred saw a reach of 24 million, becoming the talk of the city collecting 994 mentions, 167 thousand shares and 4.2 thousand likes.</p>
@@ -253,7 +253,7 @@
 
     <!-- Our Outcome End -->
 
-    <div id="our-outcome" class="row">
+    <div id="hdy-section" class="row">
       <div class="col-xl-6 g-0 border border-white p-5">
         <img class="img-fluid hdy-logo" src="assets/hdy-logo.png" alt="HDY logo">        
       </div>
@@ -267,7 +267,7 @@
 
     <!-- HDY Start -->
 
-    <div class="bg-yellow row h-100">
+    <div id="contact" class="bg-yellow row h-100">
       <div class="col-md-6 d-flex flex-column justify-content-center align-items-sm-start align-items-xl-center g-0 p-3 border border-dark">
         <h1 class="text-uppercase fw-bold hah-black contact-title">contact<br>us</h1>
       </div>
@@ -292,7 +292,7 @@
 
     <!-- Resources Start -->
 
-    <div class="row mt-5">
+    <div id="resources" class="row mt-5">
       <div class="col p-4">
         <ul class="resource-list">
           <h1 class="text-uppercase fw-bold mb-md-5 mb-sm-2" style="font-size: 10vw;">resources</h1>
@@ -354,6 +354,7 @@
 
 
     <!-- Local Scripts -->
+    <script src="script.js"></script>
     <script src="side-scrolling.js"></script>
   </body>
 </html>
