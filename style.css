@@ -373,6 +373,10 @@ header nav ul li a:hover {
     align-items: center;
   }
 
+  .sample-card:nth-child(7) {
+      width: 1500px;
+  }
+
   .outcome-desc {
       font-size: 1.25rem;
   }
