@@ -364,14 +364,20 @@ header nav ul li a:hover {
   
   .sample-card {
     position: relative;
-    height: 700px;
-    width: 900px;
+    height: 100%;
+    width: 1000px;
     padding-left: 50px;
     margin-right: 150px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
   }
+
+  .sample-card:nth-child(1),
+  .sample-card:nth-child(3) {
+      width: 500px;
+  }
+
 
   .sample-card:nth-child(7) {
       width: 1500px;
