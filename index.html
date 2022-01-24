@@ -48,7 +48,12 @@
     <div class="hero-wrapper d-flex">
         <!-- hero title -->
         <div class="row justify-content-center align-self-center">
-            <span class="hero-title text-uppercase">There are people too scared to hold hands because there are people still too scared to accept it <span class="hah-yellow">#HANDS AGAINST HATRED</span></span>
+            <!-- <span class="hero-title text-uppercase">there are people too scared to hold hands because there are people still too scared to accept it <div class="hah-yellow hero-tagline">#HANDS AGAINST HATRED</div></span> -->
+            <div id="title1" class="hero-title title-1 text-uppercase">There are people too scared</div>
+            <div id="title2" class="hero-title title-2 text-uppercase">to hold hands because there</div>
+            <div id="title3" class="hero-title title-3 text-uppercase">are people still too scared</div>
+            <div id="title4" class="hero-title title-4 text-uppercase">to accept it</div>
+            <div class="hero-title hero-tagline text-uppercase hah-yellow">#hands against hatred</div>
             <a class="text-center mt-5" href="#intro-section">scroll down</a>
         </div>
     </div>
@@ -84,19 +89,19 @@
 
     <div class="container" id="intro-section">
         <div class="row g-lg-5">
-            <div class="col-lg-6 text-center text-xl-start">
+            <div id="intro-text-1" class="col-lg-6 text-center text-xl-start">
                 <h1 class="text-uppercase fw-bold display-2">The Hurt of Many</h1>
                 <p class="pe-0 pe-xl-5 fs-5 lh-lg mt-5">Starting as a reaction piece fuelled by the hurt of many, Hands Against Hatred followed news of an unjust attack that occured in Birmingham’s gay district in October 2021.  A young man obtained horrific head injuries after the brutal attack. The motive? He was holding hands with his partner.                </p>
             </div>
-            <div class="col-lg-6 d-sm-block p-sm-5">
+            <div id="intro-image-1" class="col-lg-6 d-sm-block p-sm-5">
                 <img class="img-fluid" src="assets/hands-against-hatred-illustrations-01 v4.gif" alt="two images collaged together visualising the campaign and an on-location image of a billboard showing the visuals created being two hands held together with the hashtag hands against hatred in a bold yellow paint streak.">
             </div>
         </div>
         <div class="row g-lg-5" style="margin-top:10vw;">
-            <div class="col-lg-6 d-none d-xl-block">
+            <div id="intro-text-2" class="col-lg-6 d-none d-xl-block">
                 <img class="img-fluid" src="assets/hands-against-hatred-illustrations-02 v4.gif" alt="two images collaged together showing two of our colleagues Matt and Ben holding hands in support of the campaign as well as another location image of a billboard visualising the campaign.">
             </div>
-            <div class="col-lg-6 text-center text-xl-start">
+            <div  id="intro-image-2" class="col-lg-6 text-center text-xl-start">
                 <h1 class="text-uppercase fw-bold display-2 ps-0 ps-xl-5">The Bigger Picture</h1>
                 <p class="ps-0 ps-xl-5 fs-5 lh-lg mt-5">The why behind the campaign is simple. HDY wanted to stand proud in support of the LGBTQIA+ community. Inspiring others to speak up, uniting communities, and spreading awareness of the fact that homophobic attacks still occur. Despite how far we’ve come homophobic hate crimes have risen by 210% in six years. We believe in standing up for what’s right, and so we created a campaign that would speak out for those who have been targeted. </p>               
             </div>
@@ -356,5 +361,12 @@
     <!-- Local Scripts -->
     <script src="script.js"></script>
     <script src="side-scrolling.js"></script>
+
+    <!--Scrolling Animatons-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js" integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="text-animation.js"></script>
   </body>
 </html>

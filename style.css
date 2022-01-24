@@ -34,6 +34,10 @@ p {
     filter: grayscale(100%);
 }
 
+.hero-tagline {
+    display: inline-block;
+}
+
 /* navigation */
 
 header nav {
@@ -154,8 +158,8 @@ header nav ul li a:hover {
 }
 
 .hero-title {
-    font-size: 6vw;
-    text-align: justify;
+    font-size: 5.5vw;
+    text-align: left;
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
     color: grey;
