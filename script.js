@@ -64,3 +64,75 @@ line4.addEventListener("mouseover", function(event) {
 line4.addEventListener("mouseout", function(event) {
   event.target.style.color = "gray";
 }, false);
+
+var timeout;
+
+function preloader() {
+  timeout = setTimeout(showPage, 3000);
+};
+
+
+function showPage() {
+  document.getElementById('loading-block').style.display = "none";
+  document.getElementById('page-wrapper').style.display = "block";
+};
+
+
+const content = document.querySelector('.skew-scroll');
+
+
+
+let currentPos = window.pageXOffset;
+
+const update = () => {
+  const newPos = window.pageYOffset;
+  const diff = newPos - currentPos;
+  const speed = diff * 0.35;
+
+  content.style.transform = `skewY(${ speed }deg)`;
+  
+  currentPos = newPos;
+
+  requestAnimationFrame(update);
+};
+
+
+update();
+
+contentX = document.getElementsByClassName('side-skew-scroll');
+
+
+
+let currentPos2 = window.pageXOffset;
+
+const update2 = () => {
+  const newPos = window.pageYOffset;
+  const diff = newPos - currentPos2;
+  const speed = diff * 0.20;
+
+  for (var i = 0; i < contentX.length; i++){
+    contentX[i].style.transform = `skewX(${ speed }deg)`;
+  }
+  
+  currentPos2 = newPos;
+
+  requestAnimationFrame(update2);
+};
+
+
+update2();
+
+
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (start - end) + end);
+
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
