@@ -136,3 +136,17 @@ function animateValue(obj, start, end, duration) {
   };
   window.requestAnimationFrame(step);
 }
+
+var loading;
+
+function preloader() {
+  loading = setTimeout(showPage, 4000);
+}
+
+function showPage() {
+  document.getElementById('loading-block').style.display = "none";
+  document.getElementById('page-wrapper').style.display = "block";
+  document.querySelector('header').style.display = "block";
+}
+
+

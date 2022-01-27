@@ -50,8 +50,6 @@ p {
 
 #loading-block {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
 }
 
@@ -167,6 +165,28 @@ header nav ul li a:hover {
  
 /* navigation end */
 
+#page-wrapper {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+    height: 100%;
+}
+
+
+
+@keyframes animatebottom {
+    from { bottom:-100px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
 /* hero section */
 
 .hero-wrapper {
@@ -181,6 +201,84 @@ header nav ul li a:hover {
     font-weight: bold;
     color: grey;
     line-height: 1;
+}
+
+.hero-title:nth-child(1) {
+    animation-name: appear;
+    animation-duration: 1s;
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 1s;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+.hero-title:nth-child(2) {
+    animation-name: appear;
+    animation-duration: 1s;
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 1s;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+.hero-title:nth-child(3) {
+    animation-name: appear;
+    animation-duration: 1s;
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 1s;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+.hero-title:nth-child(4) {
+    animation-name: appear;
+    animation-duration: 1s;
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 1s;
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+
+.hero-title:nth-child(5) {
+    animation-name: appear;
+    animation-duration: 1s;
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 3s;
+    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+#scroll-down {
+    animation-name: appear;
+    animation-duration: 1s;
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 3s;
+    animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes appear {
+    from {visibility: hidden;}
+    to {visibility: visible;}
 }
 
 
@@ -546,6 +644,15 @@ header nav ul li a:hover {
     .sample-card {
         height: 100px;
         width: 300px;
+    }
+
+    .sample-card:nth-child(1),
+    .sample-card:nth-child(3) {
+        width: 400px;
+    }
+
+    .sample-card > h1 {
+        width: 75vw;
     }
 
     .sample-card > h1:last-of-type {

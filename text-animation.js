@@ -57,7 +57,8 @@
 //   })
 
 
-gsap.to('#intro-image-1',{
+if (window.innerWidth > 992) {
+  gsap.to('#intro-image-1',{
     y:'-30%',rotate:0,duration:1,scrollTrigger:{
       trigger:'#intro-image-1',
       scrub:1,
@@ -84,3 +85,4 @@ gsap.to('#intro-image-2',{
       ease: 'back.inOut(1.7)'
     }
   })
+}
