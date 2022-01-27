@@ -21,17 +21,15 @@
   </head>
   <body onload="preloader()">
 
-    <div id="loading-block" class="bg-dark align-items-center justify-content-center flex-column">
+    <div id="loading-block" class="bg-dark">
       <img src="assets/1490.gif">
       <p class="mt-3">#HANDSAGAINSTHATRED</p>
     </div>
 
-    <div data-role="page" id="page-wrapper" style="display:none;">
-
-    
+    <div id="page-wrapper" style="display: none;">
 
       <!-- Navigation Start -->
-      <header style="display: none;">
+      <header id="navigation" style="display: none;">
           <input type='checkbox' id='toggle' style='display:none;'/>
           <label class='toggle-btn toggle-btn__cross mt-4' for='toggle'>
             <div class="bar"></div>
@@ -107,7 +105,7 @@
                   <img class="img-fluid" src="assets/hands-against-hatred-illustrations-01 v5.gif" alt="two images collaged together visualising the campaign and an on-location image of a billboard showing the visuals created being two hands held together with the hashtag hands against hatred in a bold yellow paint streak.">
               </div>
           </div>
-          <div class="row g-lg-5" style="margin-top:10vw;">
+          <div class="row g-lg-5 skew-scroll" style="margin-top:10vw;">
               <div id="intro-text-2" class="col-lg-6 d-none d-xl-block">
                   <img class="img-fluid" src="assets/hands-against-hatred-illustrations-02 v5.gif" alt="two images collaged together showing two of our colleagues Matt and Ben holding hands in support of the campaign as well as another location image of a billboard visualising the campaign.">
               </div>
@@ -367,8 +365,9 @@
 
 
     <!-- Local Scripts -->
-    <script src="script.js"></script>
     <script src="side-scrolling.js"></script>
-    <script src="text-animation.js"></script>
+    <script src="script.js"></script>
+    
+    
   </body>
 </html>

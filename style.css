@@ -11,6 +11,7 @@ html, body {
 .skew-scroll {  
     will-change: transform;
     transition: transform 0.25s;
+    transform-origin: left;
 }
 
 .side-skew-scroll {  
@@ -50,6 +51,9 @@ p {
 
 #loading-block {
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
 }
 
@@ -166,27 +170,10 @@ header nav ul li a:hover {
 /* navigation end */
 
 #page-wrapper {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
-
-
-
-@keyframes animatebottom {
-    from { bottom:-100px; opacity: 0}
-    to {bottom: 0; opacity: 1}
-}
-
-
-@-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity: 0}
-    to {bottom: 0; opacity: 1}
-}
-
 /* hero section */
 
 .hero-wrapper {
