@@ -1,14 +1,14 @@
-var loading;
+// var loading;
 
-function preloader() {
-  loading = setTimeout(showPage, 4000);
-}
+// function preloader() {
+//   loading = setTimeout(showPage, 4000);
+// }
 
-function showPage() {
-  document.getElementById('loading-block').style.display = "none";
-  document.getElementById('page-wrapper').style.display = "block";
-  document.getElementById('navigation').style.display = "block";
-}
+// function showPage() {
+//   document.getElementById('loading-block').style.display = "none";
+//   document.getElementById('page-wrapper').style.display = "block";
+//   document.getElementById('navigation').style.display = "block";
+// }
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
