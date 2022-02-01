@@ -422,6 +422,11 @@ header nav ul li a:hover {
     object-fit: cover;
 }
 
+.video-2 {
+    max-width: 100%;
+    height: auto;
+}
+
 .tab-pane {
     font-size: 1.2vw;
 }
