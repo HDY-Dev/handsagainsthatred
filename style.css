@@ -431,6 +431,11 @@ header nav ul li a:hover {
     font-size: 1.2vw;
 }
 
+.block-quote {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
 .outcome-img {
     min-height: 100%;
     object-fit: cover;
