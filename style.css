@@ -6,6 +6,7 @@ html, body {
     background-color: #000;
     color: #fff;
     font-family: 'helvetica neue', sans-serif;
+    /* overflow-x: hidden; */
 }
 
 .skew-scroll {  
@@ -173,6 +174,7 @@ header nav ul li a:hover {
     height: 100%;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 /* hero section */
 

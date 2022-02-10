@@ -77,3 +77,27 @@ const update2 = () => {
 
 
 update2();
+
+
+$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+$(window).on('resize scroll', function() {
+  if ($('#overflow-on').isInViewport()) {
+      // document.getElementById('page-wrapper').style.overflowX = "scroll";
+      document.body.style.overflowX = "scroll";
+  } else {
+      // document.getElementById('page-wrapper').style.overflowX = "hidden";
+      document.body.style.overflowX = "hidden";
+  }
+});
+
+
+
