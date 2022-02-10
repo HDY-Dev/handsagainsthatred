@@ -190,6 +190,12 @@ header nav ul li a:hover {
     line-height: 1;
 }
 
+@media only screen and (max-width: 1440px) {
+    .hero-title {
+        font-size: 5vw;
+    }
+}
+
 .hero-title:nth-child(1) {
     animation-name: appear;
     animation-duration: 1s;
