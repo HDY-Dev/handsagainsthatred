@@ -10,6 +10,16 @@ html, body {
     /* overflow-x: hidden; */
 }
 
+.progress {
+    position: fixed;
+    left: 0;
+    bottom: 0!important;
+    width: 0%;
+    height: 5px!important;
+    background-color: #ffff05!important;
+    z-index: 999;
+}
+
 
 .skew-scroll {  
     will-change: transform;
@@ -68,6 +78,7 @@ p {
     width: 100%;
     padding: 25px;
     background-color: rgba(0, 0, 0, .3);
+    z-index: 998;
 }
 
 .nav-item > .nav-link {
@@ -556,6 +567,16 @@ header nav ul li a:hover {
     object-fit: cover;
 }
 
+.outcome-copy {
+    font-size: 20px;
+}
+
+@media (max-width: 767.98px) {
+    .outcome-copy {
+        font-size: 14px;
+    }
+}
+
 
   .scroll-container {
     position: relative;
@@ -706,7 +727,7 @@ header nav ul li a:hover {
     filter: grayscale(100%);
     opacity: 0;
     transition: visibility 0s, opacity .5s ease-in-out;
-    z-index: 99;
+    z-index: -1;
 }
 
 .img-hover-outer:hover .img-hover {
