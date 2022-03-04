@@ -17,6 +17,7 @@ html, body {
     width: 0%;
     height: 5px!important;
     background-color: #ffff05!important;
+    border-radius: 0;
     z-index: 999;
 }
 
