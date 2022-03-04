@@ -529,7 +529,7 @@ header nav ul li a:hover {
 
 .nav-pills > .nav-link {
     background-color: transparent!important;
-    font-size: 4vw;
+    font-size: 56px;
     font-weight: bold;
     text-transform: uppercase;
     color: #000;
@@ -560,6 +560,7 @@ header nav ul li a:hover {
 .block-quote {
     font-weight: 900;
     text-transform: uppercase;
+    font-size: 18px;
 }
 
 .outcome-img {
@@ -617,7 +618,7 @@ header nav ul li a:hover {
   .sample-card {
     position: relative;
     height: 100%;
-    width: 1000px;
+    width: 1200px;
     padding-left: 100px;
     margin-right: 150px;
     flex-shrink: 0;
@@ -649,7 +650,7 @@ header nav ul li a:hover {
   
 
   .outcome-desc {
-      font-size: 1.25rem;
+      font-size: 18px;
   }
 
 .visit-us-link {
@@ -737,6 +738,18 @@ header nav ul li a:hover {
 
 .footer {
     padding: 70px 20px;
+}
+
+.footer-link {
+    text-decoration: underline;
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #000;
+    background-color: #ffff05;
+    transform: skewX(10%);
 }
 
 @media (max-width: 575.98px) {
