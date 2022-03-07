@@ -592,6 +592,7 @@ min-height: 100vh;
 background-color: #ffff05;
 }
 
+
 .space-holder {
 position: relative;
 width: 100%;
@@ -657,7 +658,25 @@ align-items: center;
     padding: 50px;
 }
 
+.coverage-img {
+    width: 300px;
+    border: 2px solid #ffff05;
+}
 
+.line {
+    position: absolute;
+    content: "";
+    width: 70%;
+    border: solid 1px #ffff05;
+    z-index: -999;
+    transform: translate(300px, 300px);
+}
+
+@media only screen and (max-width: 800px) {
+    .line {
+        display: none;
+    }
+}
   
 
 .outcome-desc {

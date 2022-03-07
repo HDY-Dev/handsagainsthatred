@@ -10,7 +10,7 @@ let currentPos = window.pageXOffset;
 const update = () => {
   const newPos = window.pageYOffset;
   const diff = newPos - currentPos;
-  const speed = diff * 0.20;
+  const speed = diff * 0.15;
 
   for (var i = 0; i < content.length; i++){
     content[i].style.transform = `skewY(${ speed }deg)`;
